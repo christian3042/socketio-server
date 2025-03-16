@@ -9,6 +9,7 @@ use tower_http::cors::{Any, CorsLayer};
 
 #[tokio::main]
 async fn main() {
+    tracing_subscriber::fmt::init();
     let (websocket_layer, io) = SocketIo::builder().build_layer();
 
     io.ns("/", on_send_message);
