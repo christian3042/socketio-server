@@ -11,6 +11,12 @@ socketioxide = { version = "0.16.1", features = [
     "v4",
     "tracing",
 ] }
+# socketioxide = { git = "https://github.com/Totodore/socketioxide.git", branch = "fix-multiple-polling-req", features = [
+# "extensions",
+# "state",
+# "v4",
+# "tracing",
+# ] }
 tokio = { version = "1.43.0", features = ["full"] }
 tower-http = { version = "0.6.2", features = ["cors"] }
 log = "0.4.26"
