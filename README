@@ -1,0 +1,5 @@
+# Run
+
+Run the following command to enable logging:
+
+> ./start-trace.sh
