@@ -31,7 +31,7 @@ async fn main() {
     axum::serve(listener, app).await.unwrap();
 }
 
-fn on_send_message(socket: SocketRef) {
+async fn on_send_message(socket: SocketRef) {
     socket.on(
         "send-message",
         |socket: SocketRef,
